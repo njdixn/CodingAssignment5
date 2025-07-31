@@ -1,62 +1,35 @@
-body {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #fff9e6;
-    font-family: 'Calibri', sans-serif;
+/*COLOR PALET----------------------
+BACKGROUND - rgb(19, 18, 18); and image
+HEADINGS - #00adb5
+TEXT #fff
+IMEGE BOARDSR - #7cb6b6
+LINKS
+    LINK - #7cb6b6
+    HOVER - Goldenrod
+MAIN TEXT - #fff - White
+-------------------------------*/
+
+/*GLOBAL-------------------------*/
+* {
+    box-sizing: border-box;
 }
 
 div {
-    /*border: double cornflowerblue;*/
-    padding-right: 30px;
-    padding-left: 30px;
+    /* border: double #00adb5; */
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
-h1, h2, h3 {
-    font-family: 'relation', sans-serif;
-    color: goldenrod;
-    padding-top: 20px;
-    margin: 0 auto;
-}
-
-h3 {
-    font-size: x-large;
-}
-
-p, ul, li, ol {
-	color: #fff;
-	text-align: left;
-    padding-top: 10px;
-    margin: 0 auto;
-}
-
-figure {
-    font-size: small;
-	text-align: center;
-}
-
-img {
-    border: 2px solid #00adb5;
-}
-
-a {
-    color: #00adb5;
-    text-decoration: none;
-}
-
-a:hover {
-    color: goldenrod;
-}
-
-.rate {
-	color: goldenrod;
-	text-align: left;
-    padding-bottom: 10px;
-}
-
-fieldset {
-	color: goldenrod;
-   	font-size: small;
+/*BODY---------------------------*/
+body {
+    background-image: url("images/background.jpg");
+        /*Photo Licence https://stock.adobe.com/license-terms optained 7/19/2025*/
+    color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    font-family: 'Delius', serif;
 }
 
 .wrapper {
@@ -67,17 +40,89 @@ fieldset {
   flex: 1;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-[class*="col"] {
-    float: left;
-    /* padding: 15px */
-}
-
 .row::after {
     content: "";
     clear: both;
     display: block;
+    padding-bottom: 20px;
+}
+
+[class*="col"] {
+    float: left;
+    padding-right: 10px;
+}
+
+/*HEADINGS-----------------------*/
+h1, h2, h3 {
+    color: #7cb6b6;
+    font-family: 'Leckerli One', sans-serif;
+    font-size: 2em;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+/*TEXT----------------------*/
+p {
+	color: #fff;
+    font-size: 1em;
+	text-align: left;
+}
+
+ul, li, ol {
+    color: #fff;
+    font-size: 1em;
+    text-align: left;
+    padding-top: 3px;
+    margin: 0 auto;
+}
+
+/*IMAGE----------------------*/
+figure {
+    color: #fff;
+    font-size: 1em;
+	text-align: center;
+    margin: 0 auto;
+}
+
+img {
+    border: 2px solid #00adb5;
+}
+
+/*LINKS----------------------*/
+a {
+    color: #00adb5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+/*RATE THIS RECIPE SECTION----------------------*/
+.rate {
+	color: #7cb6b6;
+	text-align: left;
+    padding-bottom: 10px;
+}
+
+fieldset, legend, legend {
+	color: #7cb6b6;
+    font-size: 1em;
+    width: 290px;
+	text-align: center;
+}
+
+/*FOOTER-------------------------*/
+.footer {
+    font-size: 1em;
+    text-align: right;
+    padding: 10px 15px;
 }
